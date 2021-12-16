@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../styles/Colors';
 
 const Container = styled.div`
     display: flex;
@@ -7,8 +8,8 @@ const Container = styled.div`
     min-width: 300px;
     min-height: 66px;
     border-radius: 20px;
-    background-color: #1A1D21;
-    box-shadow: -2.17893px -2.17893px 6.5368px #2B3036, 2.17893px 2.17893px 6.5368px #101214;
+    background-color: ${COLORS.BASE};
+    box-shadow: -2.17893px -2.17893px 6.5368px ${COLORS.TINT}, 2.17893px 2.17893px 6.5368px ${COLORS.SHADE};
     border-style: none;
 `;
 
