@@ -1,17 +1,27 @@
 import styled from 'styled-components';
 
-const Container = styled.button`
+const Container = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     min-width: 300px;
     min-height: 66px;
     border-radius: 20px;
-    background-color: #24282E;
-    box-shadow: -2.17893px -2.17893px 10.5368px #2F343C, 2.17893px 2.17893px 10.5368px #171A1E;
+    background-color: #1A1D21;
+    box-shadow: -2.17893px -2.17893px 6.5368px #2B3036, 2.17893px 2.17893px 6.5368px #101214;
+    border-style: none;
 `;
 
-const LandingTab = () => {
+const Button = styled.button``;
+
+const LandingTab = ({
+    onHomePress = () => {},
+    onAboutPress = () => {}
+}) => {
     return (
         <Container>
-            this looks so bad lol
+            <button>this looks so bad lol</button>
+            <button>this looks so bad lol</button>
         </Container>
     )
 }

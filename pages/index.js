@@ -7,9 +7,10 @@ import LandingTab from '../comps/landingTab';
 
 const Page = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #24282E;
+  background-color: #1A1D21;
   color: #fff;
   width: 100vw;
   height: 100vh;
