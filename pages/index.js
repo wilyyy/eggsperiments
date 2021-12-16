@@ -3,11 +3,13 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 
+import LandingTab from '../comps/landingTab';
+
 const Page = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #24282E;
   color: #fff;
   width: 100vw;
   height: 100vh;
@@ -15,7 +17,9 @@ const Page = styled.div`
 
 export default function Home() {
   return (
-    <Page>asdasd</Page>
+    <Page>
+      <LandingTab />
+    </Page>
     // <div className={styles.container}>
     //   <Head>
     //     <title>Create Next App</title>
