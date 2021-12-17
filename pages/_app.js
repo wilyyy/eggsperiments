@@ -3,7 +3,6 @@ import Head from 'next/head';
 
 //add metadata later
 
-
 function MyApp({ Component, pageProps }) {
   return (
     <div>
