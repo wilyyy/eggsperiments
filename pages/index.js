@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import LandingTab from '../comps/landingTab';
 import ScrambledEgg from '../comps/animations/ScrambledEgg';
+import RectButton from '../comps/RectButton';
 
 const Page = styled.div`
   display: flex;
@@ -30,7 +31,7 @@ export default function Home() {
   return (
     <Page>
       <ScrambledEgg animation={collectedEgg ? eggAnim : giftAnim}/>
-      <LandingTab onHomePress={changeAnim}/>
+      <RectButton onButtonPress={changeAnim} />
     </Page>
   )
 }

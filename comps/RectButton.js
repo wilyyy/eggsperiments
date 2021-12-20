@@ -23,19 +23,15 @@ const Container = styled.button`
     }
 `;
 
-const Button = styled.button``;
-
-const LandingTab = ({
-    onHomePress = () => {},
-    onAboutPress = () => {}
+const RectButton = ({
+    onButtonPress = () => {},
+    text="collect this egg"
 }) => {
     return (
-        <Container onClick={onHomePress} className='active'>
-            Collect this egg
-            {/* <button>this looks so bad lol</button>
-            <button>this looks so bad lol</button> */}
+        <Container onClick={onButtonPress}>
+            {text}
         </Container>
     )
 }
 
-export default LandingTab;
+export default RectButton;
