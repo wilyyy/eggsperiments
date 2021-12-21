@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { COLORS } from '../styles/Colors';
 import { useState } from "react";
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 import RectButton from '../comps/RectButton';
 
-const Page = styled.div`
+const Page = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,17 +18,27 @@ const Page = styled.div`
 `;
 
 const testAnim = () => {
+    const router = useRouter();
+    
     return (
-        <motion.div initial="pageInitial" animate="pageAnimate" variants={{
-            pageInitial: {
-              opacity: 0
-            },
-            pageAnimate: {
-              opacity: 1
-            },
-          }}>
-            <Page>asdasd</Page>
-          </motion.div>
+        <Page 
+            initial="pageInitial" 
+            animate="pageAnimate" 
+            variants={{
+                pageInitial: {
+                opacity: 0
+                },
+                pageAnimate: {
+                opacity: 1
+                },
+            }}
+        >
+            <h1>Test Anim</h1>
+            <RectButton 
+                onButtonPress={()=>{router.push('/')}}
+                text='Go Home'
+            />
+        </Page>
     )
 }
 
