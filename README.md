@@ -5,7 +5,9 @@ experimental break project project to try out new technologies for the front end
 ## MVPs
 - [ ] Prototype
 - [ ] Custom components and screens created with styled components 
-- [ ] Custom Animation using Animation API
+- [ ] Custom Animation using Animation API (Framer Motion)
+- [ ] State management using context
+- [ ] Dark Mode / Light Mode toggle 
 - [ ] Firebase Email and Google Auth
 - [ ] Responsive Design for mobile devices
 - [ ] Deployed on Vercel & another deployed version hosted on own domain
