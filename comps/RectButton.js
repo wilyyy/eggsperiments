@@ -1,3 +1,5 @@
+//scrap later
+
 import styled from 'styled-components';
 import { COLORS } from '../styles/Colors';
 
@@ -25,6 +27,7 @@ const Container = styled.button`
 
 const RectButton = ({
     onButtonPress = () => {},
+    iconOn = false,
     text="collect this egg"
 }) => {
     return (
