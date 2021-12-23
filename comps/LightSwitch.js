@@ -29,7 +29,7 @@ const LightSwitch = ({
         <Container>
             <Image
                 src="/../public/svg/lightswitch_light.svg"
-                alt="Picture of the author"
+                alt="Light Switch"
                 width={32}
                 height={64}
             />

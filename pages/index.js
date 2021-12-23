@@ -21,8 +21,8 @@ const Page = styled.div`
 
 const LightCont = styled.div`
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 30px;
+  left: 65%;
 `;
 
 export default function Home() {

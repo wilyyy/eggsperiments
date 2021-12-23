@@ -19,11 +19,15 @@ const Row = styled.div`
 `;
 
 const BigTab = styled.button`
-    
+    width: 227px;
+    height: 74px;
+    background-color: ${COLORS.BASE};
 `;
 
 const SmolTab = styled.button`
-
+    width: 227px;
+    height: 74px;
+    background-color: ${COLORS.SUPERSHADE};
 `;
 
 const Card = styled.div`
