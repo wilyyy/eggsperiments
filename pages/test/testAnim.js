@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { COLORS } from '../../styles/Colors';
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 import RectButton from '../../comps/RectButton';
