@@ -5,11 +5,12 @@ import { useRouter } from 'next/router';
 
 import testAnim from './test/testAnim';
 import LandingNav from '../comps/LandingNav';
+import AuthCard from '../comps/AuthCard';
 
 const Page = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(180deg, ${COLORS.BASE} 0%, ${COLORS.SUPERLIGHTTINT} 100%);
   color: #fff;
@@ -19,17 +20,12 @@ const Page = styled.div`
 
 export default function Home() {
   // const router = useRouter();
-  // const [collectedEgg, setCollectedEgg] = useState(true);
-  // const eggAnim = "https://assets1.lottiefiles.com/packages/lf20_OyFTHm.json";
-  // const giftAnim = "https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json";
-
-  // const changeAnim = () => {
-  //   setCollectedEgg(!collectedEgg);
-  // }
+  const [counter, setCounter] = useState(0);
 
   return (
     <Page>
       <LandingNav />
+      <AuthCard />
     </Page>
   );
 }

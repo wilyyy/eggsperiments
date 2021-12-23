@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "MBFNanomaton";
+  src: url("../public/fonts/MBFNanomaton.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CartographCFRegular";
+  src: url("../public/fonts/CartographCFRegular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
