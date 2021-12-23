@@ -7,6 +7,9 @@ import testAnim from './test/testAnim';
 import LandingNav from '../comps/LandingNav';
 import AuthCard from '../comps/AuthCard';
 import LightSwitch from '../comps/LightSwitch';
+import HomeSection from '../comps/HomeSection';
+import AboutSection from '../comps/AboutSection';
+import FeaturesSection from '../comps/FeaturesSection';
 
 const Page = styled.div`
   display: flex;
@@ -27,15 +30,40 @@ const LightCont = styled.div`
 
 export default function Home() {
   // const router = useRouter();
-  const [counter, setCounter] = useState(0);
+  const [page, setPage] = useState("Home");
+
+  const ClickHome = () => {
+    setPage("Home");
+  }
+
+  const ClickAbout = () => {
+    setPage("About");
+  }
+
+  const ClickFeatures = () => {
+    setPage("Features");
+  }
 
   return (
     <Page>
-      <LandingNav />
-      <AuthCard />
+      <LandingNav 
+        onHomePress={ClickHome}
+        onAboutPress={ClickAbout}
+        onFeaturesPress={ClickFeatures}
+      />
       <LightCont>
           <LightSwitch />
       </LightCont>
+
+      {page === "Home" &&
+        <HomeSection />
+      }
+      {page === "About" &&
+        <AboutSection />
+      }
+      {page === "Features" &&
+        <FeaturesSection />
+      }
     </Page>
   );
 }

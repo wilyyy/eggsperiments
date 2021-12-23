@@ -20,6 +20,7 @@ const Stroke = styled.button`
     height: 70px;
     border-radius: 42.5px;
     border-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     background: linear-gradient(180deg, #0861D9 0%, #09397B 79.35%);
 `;
 

@@ -12,12 +12,14 @@ const Container = styled.button`
     height: 110px;
     border-style: none;
     background: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 `;
 
 const Text = styled.p`
     font-family: "CartographCFRegular";
     text-shadow: 0px 0px 8px #4583FF;
     color: ${COLORS.CONTENT};
+    filter: none;
 `;
 
 const LightSwitch = ({
