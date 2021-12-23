@@ -19,6 +19,10 @@ const Row = styled.div`
 `;
 
 const BigTab = styled.button`
+    
+`;
+
+const SmolTab = styled.button`
 
 `;
 
@@ -37,7 +41,10 @@ const Card = styled.div`
 const AuthCard = () => {
     return (
         <Container>
-            <Row />
+            <Row>
+                <BigTab />
+                <SmolTab />
+            </Row>
             <Card>
                 <BlueButton />
             </Card>

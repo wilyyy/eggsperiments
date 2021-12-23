@@ -21,16 +21,16 @@ const Selected = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 103px;
-    min-height: 23px;
+    width: ${props=>props.selectWidth};
+    height: 23px;
     background-color: ${COLORS.BASE};
     box-shadow: inset -2.17893px -2.17893px 6.5368px ${COLORS.TINT}, inset 2.17893px 2.17893px 6.5368px ${COLORS.SHADE};
     border-radius: 21px;
 `;
 
 const Row = styled.button`
-    min-width: 66px;
-    min-height: 20px;
+    width: ${props=>props.width};
+    height: 20px;
     display: flex;
     background: none;
     border-style: none;
@@ -39,6 +39,7 @@ const Row = styled.button`
     justify-content: space-between;
     color: ${COLORS.CONTENT};
     text-shadow: 0px 0px 8px #4583FF;
+    font-family: "CartographCFRegular";
 `;
 
 const HomeIcon = styled(Home)`
@@ -95,8 +96,8 @@ const LandingNav = ({
     return (
         <Container>
             {selectHome === true && 
-                <Selected>
-                    <Row>
+                <Selected selectWidth="103px">
+                    <Row width="70px">
                         <HomeIcon />
                         <p>Home</p>
                     </Row>
@@ -107,8 +108,8 @@ const LandingNav = ({
             }
 
             {selectAbout === true && 
-                <Selected>
-                    <Row>
+                <Selected selectWidth="113px">
+                    <Row width="80px">
                         <AboutIcon />
                         <p>About</p>
                     </Row>
@@ -119,8 +120,8 @@ const LandingNav = ({
             }
             
             {selectFeatures === true && 
-                <Selected>
-                    <Row>
+                <Selected selectWidth="123px">
+                    <Row width="100px">
                         <FeaturesIcon />
                         <p>Features</p>
                     </Row>

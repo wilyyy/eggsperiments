@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import testAnim from './test/testAnim';
 import LandingNav from '../comps/LandingNav';
 import AuthCard from '../comps/AuthCard';
+import LightSwitch from '../comps/LightSwitch';
 
 const Page = styled.div`
   display: flex;
@@ -18,6 +19,12 @@ const Page = styled.div`
   height: 100vh;
 `;
 
+const LightCont = styled.div`
+  position: absolute;
+  top: 25px;
+  right: 30px;
+`;
+
 export default function Home() {
   // const router = useRouter();
   const [counter, setCounter] = useState(0);
@@ -26,6 +33,9 @@ export default function Home() {
     <Page>
       <LandingNav />
       <AuthCard />
+      <LightCont>
+          <LightSwitch />
+      </LightCont>
     </Page>
   );
 }
