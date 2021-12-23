@@ -60,12 +60,18 @@ const Input = styled.input`
     border-style: none;
     width: 256px;
     height: 63px;
-    background-color: ${COLORS.SUPERSHADE};
+    background-color: ${COLORS.SHADE};
     box-shadow: inset -2.17893px -2.17893px 6.5368px #414852, inset 2.17893px 2.17893px 6.5368px #060707;
     border-radius: 11px;
     font-family: "CartographCFRegular";
     color: ${COLORS.PLACEHOLDER};
     padding: 5%;
+    
+    :focus{
+        background-color: ${COLORS.SUPERSHADE};
+        outline: none;
+        box-shadow: inset -6.17893px -6.17893px 6.5368px #414852, inset 6.17893px 6.17893px 6.5368px #060707;
+    }
 `;
 
 const AuthCard = () => {

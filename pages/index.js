@@ -7,6 +7,7 @@ import testAnim from './test/testAnim';
 import LandingNav from '../comps/LandingNav';
 import AuthCard from '../comps/AuthCard';
 import LightSwitch from '../comps/LightSwitch';
+import HomeSection from '../comps/HomeSection';
 import AboutSection from '../comps/AboutSection';
 import FeaturesSection from '../comps/FeaturesSection';
 
@@ -55,7 +56,7 @@ export default function Home() {
       </LightCont>
 
       {page === "Home" &&
-        <AuthCard />
+        <HomeSection />
       }
       {page === "About" &&
         <AboutSection />
