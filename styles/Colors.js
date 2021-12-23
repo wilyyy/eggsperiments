@@ -4,5 +4,6 @@ export const COLORS = {
     SUPERLIGHTTINT: '#30353D',
     SUPERSHADE: "#121416",
     SHADE: '#101214',
-    CONTENT: '#B0BFDE'
+    CONTENT: '#B0BFDE',
+    PLACEHOLDER: '#585D68'
 };
