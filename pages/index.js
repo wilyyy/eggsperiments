@@ -4,13 +4,14 @@ import { useState } from "react";
 import { useRouter } from 'next/router';
 
 import testAnim from './test/testAnim';
+import LandingNav from '../comps/LandingNav';
 
 const Page = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${COLORS.BASE};
+  background: linear-gradient(180deg, ${COLORS.BASE} 0%, ${COLORS.SUPERLIGHTTINT} 100%);
   color: #fff;
   width: 100vw;
   height: 100vh;
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <Page>
+      <LandingNav />
     </Page>
   );
 }
