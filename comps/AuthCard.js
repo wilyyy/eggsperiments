@@ -71,6 +71,7 @@ const Input = styled.input`
         background-color: ${COLORS.SUPERSHADE};
         outline: none;
         box-shadow: inset -6.17893px -6.17893px 6.5368px #414852, inset 6.17893px 6.17893px 6.5368px #060707;
+        transition: 1s;
     }
 `;
 
