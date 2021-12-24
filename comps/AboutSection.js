@@ -11,18 +11,22 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "MBFNanomaton";
+    color: ${COLORS.CONTENT};
 `;
 
 const H1 = styled.h1`
-
+    font-family: "MBFNanomaton";
 `;
 
 const AboutSection = () => {
     return (
         <Container>
             <H1>About</H1>
-            <LottieAnim />
+            <LottieAnim 
+                width='200px' 
+                height='200px'
+                animation="https://assets9.lottiefiles.com/private_files/lf30_vlze61r7.json"
+            />
             <AboutCard />
         </Container>
     )
