@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 import { COLORS } from '../styles/Colors';
 import { useState } from "react";
-import { useRouter } from 'next/router';
 
-import testAnim from './test/testAnim';
 import LandingNav from '../comps/LandingNav';
-import AuthCard from '../comps/AuthCard';
 import LightSwitch from '../comps/LightSwitch';
 import HomeSection from '../comps/HomeSection';
 import AboutSection from '../comps/AboutSection';

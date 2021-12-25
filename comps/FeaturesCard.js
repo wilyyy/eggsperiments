@@ -4,7 +4,6 @@ import { COLORS } from '../styles/Colors';
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     aLign-items: center;
     width: 454px;
     height: 522px;
@@ -13,13 +12,18 @@ const Container = styled.div`
     border-radius: 11px;
     font-family: "CartographCFRegular";
     color: ${COLORS.CONTENT};
-    padding: 0 3%;
+    padding: 2% 3% 0 3%;
 `;
 
 const H2 = styled.h2`
     font-size: 24px;
     font-family: "CartographCFRegular";
     align-self: flex-start;
+    margin: 0;
+`;
+
+const Ul = styled.ul`
+    padding: 0;
 `;
 
 const Li = styled.li`
@@ -35,21 +39,21 @@ const FeaturesCard = () => {
         <Container>
             <Para>Below is a List of features that Eggsperiments offers</Para>
             <H2>MVPs</H2>
-            <ul>
+            <Ul>
                 <Li>Custom components and pages created with styled components</Li>
                 <Li>Custom animated microinteractions using Animation API (Framer Motion)</Li>
                 <Li>Dark Mode / Light Mode toggle</Li>
                 <Li>Firebase Email and Google Auth</Li>
                 <Li>Responsive Design for mobile devices</Li>
                 <Li>Deployed on Vercel & another deployed version hosted on own domain</Li>
-            </ul>
+            </Ul>
             <H2>Extra Features to be added later</H2>
-            <ul>
+            <Ul>
                 <Li>Player currency required to purchse eggs (specific to firebase user id).</Li>
                 <Li>Slot machine game to acquire currency</Li>
                 <Li>Add friends and trade eggs</Li>
                 <Li>Leaderboard of most eggs collected</Li>
-            </ul>
+            </Ul>
         </Container>
     )
 }
