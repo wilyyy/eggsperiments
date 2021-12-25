@@ -28,25 +28,12 @@ const LightCont = styled.div`
 export default function Home() {
   // const router = useRouter();
   const [page, setPage] = useState("Home");
-
-  const ClickHome = () => {
-    setPage("Home");
-  }
-
-  const ClickAbout = () => {
-    setPage("About");
-  }
-
-  const ClickFeatures = () => {
-    setPage("Features");
-  }
-
   return (
     <Page>
       <LandingNav 
-        onHomePress={ClickHome}
-        onAboutPress={ClickAbout}
-        onFeaturesPress={ClickFeatures}
+        onHomePress={()=>{setPage("About")}}
+        onAboutPress={()=>{setPage("About")}}
+        onFeaturesPress={()=>{setPage("Features")}}
       />
       <LightCont>
           <LightSwitch />
