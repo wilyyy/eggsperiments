@@ -31,10 +31,13 @@ const LightSwitch = ({
     const ToggleDarkMode = () => {
         setTurnOn(!turnOn)
     }
+
+    const DarkSwitch = "/../public/lightswitch_dark.svg";
+    const LightSwitch = "/../public/lightswitch_light.svg";
     return (
         <Container>
             <Image
-                src={turnOn ? "/../public/svg/lightswitch_dark.svg" : "/../public/svg/lightswitch_light.svg"}
+                src={turnOn ? DarkSwitch : LightSwitch}
                 alt="Light Switch"
                 width={32}
                 height={64}
