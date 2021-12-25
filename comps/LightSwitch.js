@@ -27,13 +27,18 @@ const LightSwitch = ({
     text="Light Mode"
 }) => {
     const [turnOn, setTurnOn] = useState(false);
+
+    const ToggleDarkMode = () => {
+        setTurnOn(!turnOn)
+    }
     return (
         <Container>
             <Image
-                src="/../public/svg/lightswitch_light.svg"
+                src={turnOn ? "/../public/svg/lightswitch_dark.svg" : "/../public/svg/lightswitch_light.svg"}
                 alt="Light Switch"
                 width={32}
                 height={64}
+                onClick={ToggleDarkMode}
             />
             <Text>{text}</Text>
         </Container>
