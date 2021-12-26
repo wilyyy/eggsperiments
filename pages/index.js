@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Page>
       <LandingNav 
-        onHomePress={()=>{setPage("About")}}
+        onHomePress={()=>{setPage("Home")}}
         onAboutPress={()=>{setPage("About")}}
         onFeaturesPress={()=>{setPage("Features")}}
       />
