@@ -22,6 +22,11 @@ const Stroke = styled.button`
     border-style: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     background: linear-gradient(180deg, #0861D9 0%, #09397B 79.35%);
+    
+    :hover{
+        box-shadow: 0px 0px 8px #4583FF;
+        transition: 1s;
+    }
 `;
 
 const Text = styled.p`
@@ -32,10 +37,11 @@ const Text = styled.p`
 `;
 
 const BlueButton = ({
-    text="LOGIN"
+    text="LOGIN",
+    onButtonPress = () => {}
 }) => {
     return (
-        <Stroke>
+        <Stroke onClick={onButtonPress}>
             <Container>
                 <Text>{text}</Text>
             </Container>

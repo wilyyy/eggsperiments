@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { COLORS } from '../styles/Colors';
+import { useRouter } from 'next/router';
 
 import BlueButton from './BlueButton';
 
@@ -68,14 +69,17 @@ const Input = styled.input`
     padding: 5%;
     
     :focus{
-        background-color: ${COLORS.SUPERSHADE};
+        background-color: #000000;
         outline: none;
-        box-shadow: inset -6.17893px -6.17893px 6.5368px #414852, inset 6.17893px 6.17893px 6.5368px #060707;
         transition: 1s;
     }
 `;
 
 const AuthCard = () => {
+    const router = useRouter();
+    const RouteToLoading = () => {
+        router.push('/Loading');
+    }
     return (
         <Container>
             {/* <Row>
@@ -85,7 +89,7 @@ const AuthCard = () => {
             <Card>
                 <Input placeholder="E-mail" type="email" />
                 <Input placeholder="Password" type="password" />
-                <BlueButton />
+                <BlueButton onButtonPress={RouteToLoading}/>
             </Card>
         </Container>
     )

@@ -1,25 +1,33 @@
 import styled from 'styled-components';
 import { useState } from "react";
 import { COLORS } from '../styles/Colors';
+import { RiDashboardFill } from "react-icons/ri";
 
 //do inset another way :(
+// use IconContext?
 
-const Inset = styled.div`
-    height: 100vh;
-    width: 10%;
-    box-shadow: inset -4px 0px 10px rgba(39, 43, 48, 0.5);
-`;
 const Container = styled.div`
-    height: 100%;
-    width: 100%;
+    display: flex;
+    width: 91px;
+    height: 100vh;
+    box-shadow: inset -4px 0px 10px ${COLORS.TINT};
+    filter: drop-shadow(5px 0px 10px ${COLORS.SHADE});
     background: linear-gradient(180deg, ${COLORS.SHADE} 0%, ${COLORS.TINT} 100%);
+`;
+
+const NavButton = styled.div`
+    width: 22px;
+    height: 22px;
+    color: ${COLORS.CONTENT};
 `;
 
 const NavDesktop = () => {
     return (
-        <Inset>
-            <Container />
-        </Inset>
+        <Container>
+            <NavButton>
+                <RiDashboardFill size="22px"/>
+            </NavButton>
+        </Container>
     )
 }
 
