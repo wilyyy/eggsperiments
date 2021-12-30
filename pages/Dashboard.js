@@ -19,7 +19,7 @@ const PageCard = styled.div`
     width: 100vw;
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
-    padding: 0 5%;
+    padding: 0 0 0 2%;
 `;
 
 const Dashboard = () => {
