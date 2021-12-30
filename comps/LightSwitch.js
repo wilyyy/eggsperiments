@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Image from 'next/image'
+import Image from 'next/image';
 import { useState } from "react";
 import { COLORS } from '../styles/Colors';
 
@@ -29,11 +29,12 @@ const LightSwitch = ({
     const [turnOn, setTurnOn] = useState(false);
 
     const ToggleDarkMode = () => {
-        setTurnOn(!turnOn)
+        setTurnOn(!turnOn);
+        onButtonPress();
     }
 
-    const DarkSwitch = "/../public/lightswitch_dark.svg";
-    const LightSwitch = "/../public/lightswitch_light.svg";
+    const DarkSwitch = "/../public/lightswitch_dark.png";
+    const LightSwitch = "/../public/lightswitch_light.png";
     return (
         <Container>
             <Image

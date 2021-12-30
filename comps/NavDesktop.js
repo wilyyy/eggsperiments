@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState } from "react";
 import { COLORS } from '../styles/Colors';
 import { RiDashboardFill } from "react-icons/ri";
+import {StyledIconBase} from '@styled-icons/styled-icon';
 
 //do inset another way :(
 // use IconContext?
