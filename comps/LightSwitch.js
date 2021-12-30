@@ -19,14 +19,8 @@ const Container = styled.button`
 
 const Text = styled.p`
     font-family: "CartographCFRegular";
-    text-shadow: 0px 0px 8px #4583FF;
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     filter: none;
-`;
-
-const Img = styled.img`
-    width: 34px;
-    height: 64px;
 `;
 
 const LightSwitch = ({

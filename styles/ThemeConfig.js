@@ -16,7 +16,7 @@ export const lightTheme = {
     TINT: '#DFE5E5',
     SUPERLIGHTTINT: '#F7F7F7',
     SUPERSHADE: "#8E8E8E",
-    SHADE: '#C5C8CC',
+    SHADE: '#AFB3B8',
     CONTENT: '#121416',
     PLACEHOLDER: '#484C55',
     INPUTON: '#BFBFBF'
