@@ -11,7 +11,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
 `;
 
 const H1 = styled.h1`

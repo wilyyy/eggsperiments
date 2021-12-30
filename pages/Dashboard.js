@@ -18,7 +18,7 @@ const PageCard = styled.div`
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(90deg, #0E0F11 -2%, #1A1D21 1.47%, #1A1D21 93.36%);
+    background: ${({ theme }) => theme.BASE};
     padding: 0 5%;
 `;
 

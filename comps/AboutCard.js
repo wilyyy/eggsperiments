@@ -7,13 +7,13 @@ const Container = styled.div`
     align-items: center;
     width: 690px;
     height: 231px;
-    background: linear-gradient(180deg, #2A2F35 0%, #2E333A 100%);
-    box-shadow: -4px -4px 6.5368px #393F47, 4px 4px 6.5368px #1A1D21;
+    background: linear-gradient(180deg, ${({ theme }) => theme.BASE} 0%, ${({ theme }) => theme.SUPERLIGHTTINT} 100%);
+    box-shadow: -4px -4px 6.5368px ${({ theme }) => theme.SUPERLIGHTTINT}, 4px 4px 6.5368px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     padding: 5% 3% 8% 3%;
     font-family: "CartographCFRegular";
     font-size: 14px;
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
 
 `;
 

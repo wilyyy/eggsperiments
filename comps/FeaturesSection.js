@@ -11,7 +11,7 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     font-family: "MBFNanomaton";
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
 `;
 
 const H1 = styled.h1`
