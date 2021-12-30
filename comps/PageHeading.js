@@ -3,7 +3,7 @@ import { useState } from "react";
 import { COLORS } from '../styles/Colors';
 
 const Text = styled.p`
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     font-size: 37px;
     font-family: "MBFNanomaton";
 `;

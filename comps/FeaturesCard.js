@@ -7,11 +7,11 @@ const Container = styled.div`
     aLign-items: center;
     width: 454px;
     height: 522px;
-    background: Linear-gradient(180deg, #21252A 0%, #2C3138 100%);
-    box-shadow: -4px -4px 6.5368px #393F47, 4px 4px 6.5368px #1A1D21;
+    background: linear-gradient(180deg, ${({ theme }) => theme.BASE} 0%, ${({ theme }) => theme.SUPERLIGHTTINT} 100%);
+    box-shadow: -4px -4px 6.5368px ${({ theme }) => theme.SUPERLIGHTTINT}, 4px 4px 6.5368px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     font-family: "CartographCFRegular";
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     padding: 2% 3% 0 3%;
 `;
 

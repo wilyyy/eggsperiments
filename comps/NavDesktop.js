@@ -11,15 +11,15 @@ const Container = styled.div`
     display: flex;
     width: 91px;
     height: 100vh;
-    box-shadow: inset -4px 0px 10px ${COLORS.TINT};
-    filter: drop-shadow(5px 0px 10px ${COLORS.SHADE});
-    background: linear-gradient(180deg, ${COLORS.SHADE} 0%, ${COLORS.TINT} 100%);
+    box-shadow: inset -4px 0px 10px ${({ theme }) => theme.TINT};
+    filter: drop-shadow(5px 0px 10px ${({ theme }) => theme.SHADE});
+    background: linear-gradient(180deg, ${({ theme }) => theme.SHADE} 0%, ${({ theme }) => theme.TINT} 100%);
 `;
 
 const NavButton = styled.div`
     width: 22px;
     height: 22px;
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
 `;
 
 const NavDesktop = () => {

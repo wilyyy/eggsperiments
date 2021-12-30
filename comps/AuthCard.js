@@ -51,8 +51,8 @@ const Card = styled.div`
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background: linear-gradient(180deg, ${COLORS.BASE} 0%, ${COLORS.SUPERLIGHTTINT} 100%);
-    box-shadow: -4px -4px 6.5368px ${COLORS.TINT}, 4px 4px 6.5368px ${COLORS.SHADE};
+    background: linear-gradient(180deg, ${({ theme }) => theme.BASE} 0%, ${({ theme }) => theme.SUPERLIGHTTINT} 100%);
+    box-shadow: -4px -4px 6.5368px ${({ theme }) => theme.SUPERLIGHTTINT}, 4px 4px 6.5368px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     z-index: 1;
 `;
@@ -61,15 +61,23 @@ const Input = styled.input`
     border-style: none;
     width: 256px;
     height: 63px;
-    background-color: ${COLORS.SHADE};
-    box-shadow: inset -2.17893px -2.17893px 6.5368px #414852, inset 2.17893px 2.17893px 6.5368px #060707;
+    background-color: ${({ theme }) => theme.SHADE};
+    box-shadow: inset -2.17893px -2.17893px 6.5368px ${({ theme }) => theme.INPUTTINT}, inset 2.17893px 2.17893px 6.5368px ${({ theme }) => theme.INPUTSHADE};
     border-radius: 11px;
     font-family: "CartographCFRegular";
-    color: ${COLORS.PLACEHOLDER};
+    color: ${({ theme }) => theme.PLACEHOLDER};
     padding: 5%;
+
+    ::placeholder,
+    ::-webkit-input-placeholder {
+        color: ${({ theme }) => theme.PLACEHOLDER};
+    }
+    :-ms-input-placeholder {
+        color: ${({ theme }) => theme.PLACEHOLDER};
+    }
     
     :focus{
-        background-color: #000000;
+        background-color: ${({ theme }) => theme.INPUTACTIVE};
         outline: none;
         transition: 1s;
     }
