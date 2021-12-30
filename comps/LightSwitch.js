@@ -40,8 +40,6 @@ const LightSwitch = ({
         onButtonPress();
     }
 
-    // const DarkSwitch = "/../public/lightswitch_dark.png";
-    // const LightSwitch = "/../public/lightswitch_light.png";
     return (
         <Container>
             <Image
