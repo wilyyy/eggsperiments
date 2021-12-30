@@ -13,16 +13,10 @@ const Page = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(180deg, ${COLORS.BASE} 0%, ${COLORS.SUPERLIGHTTINT} 100%);
+  background: linear-gradient(180deg, ${({ theme }) => theme.BASE} 0%, ${({ theme }) => theme.SUPERLIGHTTINT} 100%);
   color: #fff;
   width: 100vw;
   height: 100vh;
-`;
-
-const LightCont = styled.div`
-  position: absolute;
-  top: 30px;
-  left: 65%;
 `;
 
 export default function Home() {

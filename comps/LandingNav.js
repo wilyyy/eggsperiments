@@ -13,7 +13,7 @@ const Container = styled.div`
     height: 54px;
     background-color: ${({ theme }) => theme.BASE};
     color: ${({ theme }) => theme.CONTENT};
-    box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${COLORS.SHADE};
+    box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
     border-radius: 49px;
 `;
 
@@ -23,8 +23,8 @@ const Selected = styled.div`
     align-items: center;
     width: ${props=>props.selectWidth};
     height: 23px;
-    background-color: ${COLORS.BASE};
-    box-shadow: inset -2.17893px -2.17893px 6.5368px ${COLORS.TINT}, inset 2.17893px 2.17893px 6.5368px ${COLORS.SHADE};
+    background-color: ${({ theme }) => theme.SHADE};
+    box-shadow: inset -2.17893px -2.17893px 6.5368px ${({ theme }) => theme.TINT};, inset 2.17893px 2.17893px 6.5368px ${({ theme }) => theme.SUPERSHADE};;
     border-radius: 21px;
 `;
 
@@ -37,27 +37,26 @@ const Row = styled.button`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: ${COLORS.CONTENT};
-    text-shadow: 0px 0px 8px #4583FF;
+    color: ${({ theme }) => theme.CONTENT};
     font-family: "CartographCFRegular";
 `;
 
 const HomeIcon = styled(Home)`
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     width: 16px;
     height: 16px;
     text-shadow: 0px 0px 8px #4583FF;
 `;
 
 const AboutIcon = styled(InfoCircleFill)`
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     width: 16px;
     height: 16px;
     text-shadow: 0px 0px 8px #4583FF;
 `;
 
 const FeaturesIcon = styled(ClipboardList)`
-    color: ${COLORS.CONTENT};
+    color: ${({ theme }) => theme.CONTENT};
     width: 16px;
     height: 16px;
     text-shadow: 0px 0px 8px #4583FF;

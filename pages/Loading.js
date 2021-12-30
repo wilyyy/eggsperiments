@@ -13,12 +13,12 @@ const Page = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.BASE};
 `;
 
 const Text = styled.p`
     font-size: 36px;
-    color: ${COLORS.SUPERSHADE};
+    color: ${({ theme }) => theme.CONTENT};
     position: absolute;
     bottom: 30%;
 `;
