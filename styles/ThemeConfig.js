@@ -7,19 +7,19 @@ export const darkTheme = {
     SUPERSHADE: "#121416",
     SHADE: '#101214',
     CONTENT: '#B0BFDE',
-    PLACEHOLDER: '#585D68',
-    INPUTON: '0F1012'
+    PLACEHOLDER: '#484C55',
+    INPUTON: '#BFBFBF'
 }
 
 export const lightTheme = {
-    BASE: '#1A1D21',
-    TINT: '#2B3036',
-    SUPERLIGHTTINT: '#30353D',
-    SUPERSHADE: "#121416",
-    SHADE: '#101214',
-    CONTENT: '#B0BFDE',
-    PLACEHOLDER: '#585D68',
-    INPUTON: '0F1012'
+    BASE: '#D8DADE',
+    TINT: '#DFE5E5',
+    SUPERLIGHTTINT: '#F7F7F7',
+    SUPERSHADE: "#8E8E8E",
+    SHADE: '#C5C8CC',
+    CONTENT: '#121416',
+    PLACEHOLDER: '#484C55',
+    INPUTON: '#BFBFBF'
 }
 
 export const GlobalStyles = createGlobalStyle`

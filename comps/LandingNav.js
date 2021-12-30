@@ -11,9 +11,9 @@ const Container = styled.div`
     justify-content: space-evenly;
     width: 454px;
     height: 54px;
-    background-color: ${COLORS.BASE};
-    color: ${COLORS.CONTENT};
-    box-shadow: -4px -4px 10px ${COLORS.TINT}, 4px 4px 10px ${COLORS.SHADE};
+    background-color: ${({ theme }) => theme.BASE};
+    color: ${({ theme }) => theme.CONTENT};
+    box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${COLORS.SHADE};
     border-radius: 49px;
 `;
 
