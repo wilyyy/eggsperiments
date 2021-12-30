@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { useState } from "react";
 import { COLORS } from '../styles/Colors';
+import lightswitch_dark from '../public/lightswitch_dark.svg';
+import lightswitch_light from '../public/lightswitch_light.svg';
 
 const Container = styled.button`
     display: flex;
@@ -22,6 +24,11 @@ const Text = styled.p`
     filter: none;
 `;
 
+const Img = styled.img`
+    width: 34px;
+    height: 64px;
+`;
+
 const LightSwitch = ({
     onButtonPress=()=>{},
     text="Light Mode"
@@ -33,12 +40,12 @@ const LightSwitch = ({
         onButtonPress();
     }
 
-    const DarkSwitch = "/../public/lightswitch_dark.png";
-    const LightSwitch = "/../public/lightswitch_light.png";
+    // const DarkSwitch = "/../public/lightswitch_dark.png";
+    // const LightSwitch = "/../public/lightswitch_light.png";
     return (
         <Container>
             <Image
-                src={turnOn ? DarkSwitch : LightSwitch}
+                src={turnOn ? lightswitch_dark : lightswitch_light}
                 alt="Light Switch"
                 width={32}
                 height={64}
