@@ -2,17 +2,18 @@
 
 experimental break project project to try out new technologies for the front end and play with 2022 UI/UX trends (Neumorphism-focused)
 
-## MVPs
-- [ ] Prototype
-- [ ] Custom components and screens created with styled components 
+## Todo
+- [ x ] Prototype
+- [ ] Finish Custom components and screens created with styled components 
+- [ ] Finish Dark Mode / Light Mode toggle 
 - [ ] Custom Animation using Animation API (Framer Motion)
-- [ ] State management using context
-- [ ] Dark Mode / Light Mode toggle 
 - [ ] Firebase Email and Google Auth
 - [ ] Responsive Design for mobile devices
-- [ ] Deployed on Vercel & another deployed version hosted on own domain
+- [ x ] Deployed on Vercel
 
-## Back end features to maybe implement later (MERN?)
+## If I have time
+- [ ] clean up code and use clean state management using context (wanna get good at it)
+- [ ] figure out a way to implement high order array functions & dynamic routing for practice 
 - [ ] Player currency required to purchse eggs (specific to firebase user id)
 - [ ] Slot machine game to acquire currency
 - [ ] Add friends and trade eggs
