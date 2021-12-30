@@ -5,7 +5,7 @@ experimental break project project to try out new technologies for the front end
 ## Todo
 - [x] Prototype
 - [ ] Finish Custom components and screens created with styled components 
-- [ ] Finish Dark Mode / Light Mode toggle 
+- [x] Finish Dark Mode / Light Mode toggle 
 - [ ] Custom Animation using Animation API (Framer Motion)
 - [ ] Firebase Email and Google Auth
 - [ ] Responsive Design for mobile devices
