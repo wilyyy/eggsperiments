@@ -7,6 +7,8 @@ import { ShoppingCart } from '@styled-icons/entypo/ShoppingCart';
 import { ShoppingBasket } from '@styled-icons/fa-solid/ShoppingBasket';
 import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
 import { LogOut } from '@styled-icons/entypo/LogOut';
+import { useRouter } from 'next/router';
+
 
 const Container = styled.div`
     display: flex;
@@ -70,16 +72,17 @@ const LogOutIcon = styled(LogOut)`
 `;
 
 const NavDesktop = () => {
+    const router = useRouter();
     return (
         <Container>
             <TopCol>
-                <DashboardIcon />
-                <StoreIcon />
-                <CollectionIcon />
-                <ProfileIcon />
+                <DashboardIcon onClick={()=>{router.push('/Dashboard')}}/>
+                <StoreIcon onClick={()=>{router.push('/Store')}}/>
+                <CollectionIcon onClick={()=>{router.push('/Collection')}}/>
+                <ProfileIcon onClick={()=>{router.push('/Profile')}}/>
             </TopCol>
             <Spacer />
-            <LogOutIcon />
+            <LogOutIcon onClick={()=>{router.push('/')}}/>
         </Container>
     )
 }

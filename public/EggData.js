@@ -40,3 +40,26 @@ export const ShopItems = [
         price: '$3200'
     },
 ];
+
+export const CollectionItems = [
+    {
+        name: 'Silly Egg',
+        src: 'https://assets6.lottiefiles.com/packages/lf20_OyFTHm.json'
+    },
+    {
+        name: 'Hiding Owl Egg',
+        src: 'https://assets6.lottiefiles.com/packages/lf20_PPsmJ4.json'
+    },
+    {
+        name: 'Eggs on Ramen',
+        src: 'https://assets6.lottiefiles.com/packages/lf20_dzfeml7x.json'
+    },
+    {
+        name: 'Easter Bunny Egg',
+        src: 'https://assets6.lottiefiles.com/packages/lf20_8rwguqgh.json'
+    },
+    {
+        name: 'Tamago Egg UwU',
+        src: 'https://assets6.lottiefiles.com/packages/lf20_Qfw0lm.json'
+    },
+];
