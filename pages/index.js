@@ -29,10 +29,6 @@ export default function Home() {
         onAboutPress={()=>{setPage("About")}}
         onFeaturesPress={()=>{setPage("Features")}}
       />
-      {/* <LightCont>
-          <LightSwitch />
-      </LightCont> */}
-
       {page === "Home" &&
         <HomeSection />
       }

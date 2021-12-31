@@ -8,9 +8,6 @@ import { ShoppingBasket } from '@styled-icons/fa-solid/ShoppingBasket';
 import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
 import { LogOut } from '@styled-icons/entypo/LogOut';
 
-//do inset another way :(
-// use IconContext?
-
 const Container = styled.div`
     display: flex;
     flex-direction: column;

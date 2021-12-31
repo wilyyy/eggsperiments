@@ -11,7 +11,7 @@ import LightSwitch from '../comps/LightSwitch';
 const LightCont = styled.div`
   position: absolute;
   top: 2%;
-  right: 5%;
+  right: 1.5%;
 `;
 
 //add metadata later
