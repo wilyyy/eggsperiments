@@ -5,6 +5,7 @@ experimental break project project to try out new technologies for the front end
 ## Todo
 - [x] Prototype
 - [ ] Finish Custom components and screens created with styled components 
+- - [ ] try using high order array functions to load some comps (map, filter, etc)
 - [x] Finish Dark Mode / Light Mode toggle 
 - [ ] Custom Animation using Animation API (Framer Motion)
 - [ ] Firebase Email and Google Auth
