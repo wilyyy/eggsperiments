@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { COLORS } from '../styles/Colors';
 import axios from 'axios';
 
+//commit 
 import NavDesktop from '../comps/NavDesktop';
 import StoreEggCard from '../comps/StoreEggCard';
 import { ShopItems } from '../public/EggData';
