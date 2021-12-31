@@ -14,6 +14,7 @@ const Container = styled.div`
     box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     font-family: "CartographCFRegular";
+    padding: 0 1% 0 0;
 `;
 
 const Column = styled.div`
@@ -22,7 +23,7 @@ const Column = styled.div`
 `;
 
 const H1 = styled.p`
-    font-size: 18px;
+    font-size: 14px;
 `;
 
 const Price = styled.p`

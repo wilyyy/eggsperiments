@@ -23,7 +23,7 @@ const PageCard = styled.div`
     width: 100vw;
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
-    padding: 0 0 0 2%;
+    /* padding: 0 0 0 2%; */
 `;
 
 const CardWrapper = styled.div`
@@ -39,15 +39,16 @@ const Store = () => {
             <PageCard>
                 <PageHeading text="Store"/>
                 {
-                    eggCard.map((o, i) => (
-                        <CardWrapper key={i}>
-                            <StoreEggCard
-                                heading={o.name}
-                                src={o.src}
-                                price={o.price}
-                            />
-                        </CardWrapper>
-                    )
+                    eggCard.map(
+                        (o, i) => (
+                            <CardWrapper key={i}>
+                                <StoreEggCard
+                                    heading={o.name}
+                                    src={o.src}
+                                    price={o.price}
+                                />
+                            </CardWrapper>
+                        )   
                     )
                 }
             </PageCard>
