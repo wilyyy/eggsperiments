@@ -7,8 +7,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 250px;
-    height: 240px;
+    width: 200px;
+    height: 190px;
     background-color: ${({ theme }) => theme.BASE};
     color: ${({ theme }) => theme.CONTENT};
     box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
@@ -38,19 +38,20 @@ const StoreEggCard = ({
     return (
         <Container>
             <LottieAnim 
-                width="100px"
-                height="100px"
+                width="60px"
+                height="60px"
                 animation={src}
             />
             <Column>
                 <H1>{heading}</H1>
                 <Price>{price}</Price>
                 <BlueButton 
-                    innerwidth="117px"
-                    innerheight="37px"
-                    outerwidth="119px"
-                    outerheight="42px"
+                    innerwidth="97px"
+                    innerheight="17px"
+                    outerwidth="99px"
+                    outerheight="22px"
                     text="Buy"
+                    textsize="14px"
                 />
             </Column>
         </Container>
