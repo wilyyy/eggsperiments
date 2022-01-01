@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { COLORS } from '../styles/Colors';
 import axios from 'axios';
 
+//pls fix deploy :((
+
+
 //commit 
 import NavDesktop from '../comps/NavDesktop';
 import StoreEggCard from '../comps/StoreEggCard';
