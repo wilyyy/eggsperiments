@@ -31,13 +31,14 @@ const Stroke = styled.button`
 
 const Text = styled.p`
     font-family: "CartographCFRegular";
-    font-size: 24px;
+    font-size: ${props=>props.textsize};
     color: ${COLORS.CONTENT};
     text-shadow: 0px 0px 8px #4583FF;
 `;
 
 const BlueButton = ({
     text="LOGIN",
+    textsize="24px",
     onButtonPress = () => {},
     innerwidth="216px",
     innerheight="60px",
@@ -52,7 +53,7 @@ const BlueButton = ({
                 outerwidth={outerwidth}
                 outerheight={outerheight}
             >
-                <Text>{text}</Text>
+                <Text textsize={textsize}>{text}</Text>
             </Container>
         </Stroke>
     )
