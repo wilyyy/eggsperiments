@@ -24,16 +24,15 @@ const Text = styled.p`
 `;
 
 const Loading = () => {
-    useEffect(()=>{
-        setTimeout(RouteToDashboard, 5000);
-    }, [])
-
     const router = useRouter();
-
-    const RouteToDashboard = () => {
-        router.push('/Dashboard');
-    }
-
+    useEffect(()=>{
+        const RouteToDashboard = () => {
+            router.push('/Dashboard');
+        }
+    
+        setTimeout(RouteToDashboard, 5000);
+    }, [router])
+    
     return (
         <Page>
             <Player
