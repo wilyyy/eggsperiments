@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from '../styles/Colors';
 import { useState } from "react";
 import { Home } from '@styled-icons/boxicons-solid/Home';
 import { InfoCircleFill } from '@styled-icons/bootstrap/InfoCircleFill';

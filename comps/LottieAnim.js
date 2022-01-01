@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const Container = styled.div`
     width: ${props=>props.width};

@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import { useState } from "react";
-import { COLORS } from '../styles/Colors';
-
-// add drop shadow on nav instead of doing it like this?
 
 import NavDesktop from '../comps/NavDesktop';
 import PageHeading from '../comps/PageHeading';

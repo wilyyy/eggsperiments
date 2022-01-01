@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from '../styles/Colors';
 import { useRouter } from 'next/router';
 
 import BlueButton from './BlueButton';
@@ -10,38 +9,6 @@ const Container = styled.div`
     width: 454px;
     height: 549px;
 `;
-
-// const Row = styled.div`
-//     display: flex;
-//     width: 454px;
-//     height: 74px;
-// `;
-
-// const BigTab = styled.button`
-//     position: relative;
-//     top: 2px;
-//     width: 227px;
-//     height: 74px;
-//     border-style: none;
-//     background-color: ${COLORS.BASE};
-//     box-shadow: -4px -4px 6.5368px #393F47, 4px 4px 6.5368px #1A1D21;
-//     z-index: 1;
-//     border-top-left-radius: 11px;
-//     border-top-right-radius: 11px;
-// `;
-
-// const SmolTab = styled.button`
-//     position: relative;
-//     top: 10px;
-//     width: 227px;
-//     height: 74px;
-//     border-style: none;
-//     background-color: ${COLORS.SUPERSHADE};
-//     z-index: 0;
-//     border-top-left-radius: 11px;
-//     border-top-right-radius: 11px;
-//     box-shadow: -4px -4px 6.5368px #393F47, 4px 4px 6.5368px #1A1D21;
-// `;
 
 const Card = styled.div`
     width: 454px;

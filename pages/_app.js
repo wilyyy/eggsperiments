@@ -27,6 +27,13 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme == 'dark' ? darkTheme : lightTheme}>
       <Head>
         <title>Eggsperiments</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta 
+          name="Eggsperiments" 
+          content="Experimental break project project by William Laurel Alvarez.
+          Developed in react based framework NextJS. The premise of the app is to collect eggs" 
+        />
         <link
             rel="preload"
             href="../public/fonts/MBFNanomaton.otf"
@@ -40,6 +47,7 @@ function MyApp({ Component, pageProps }) {
             crossOrigin=""
         />
       </Head>
+      
       <Component {...pageProps} />
 
       <LightCont>

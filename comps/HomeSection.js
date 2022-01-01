@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from '../styles/Colors';
 
 import AuthCard from './AuthCard';
 

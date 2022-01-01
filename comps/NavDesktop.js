@@ -1,14 +1,10 @@
 import styled from 'styled-components';
-import { useState } from "react";
-import { COLORS } from '../styles/Colors';
-import { RiDashboardFill } from "react-icons/ri";
 import { Dashboard } from '@styled-icons/material-rounded/Dashboard';
 import { ShoppingCart } from '@styled-icons/entypo/ShoppingCart';
 import { ShoppingBasket } from '@styled-icons/fa-solid/ShoppingBasket';
 import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
 import { LogOut } from '@styled-icons/entypo/LogOut';
 import { useRouter } from 'next/router';
-
 
 const Container = styled.div`
     display: flex;

@@ -1,12 +1,6 @@
 import styled from 'styled-components';
-import { useState, useEffect } from "react";
-import { COLORS } from '../styles/Colors';
-import axios from 'axios';
+import { useState } from "react";
 
-//pls fix deploy :((
-
-
-//commit 
 import NavDesktop from '../comps/NavDesktop';
 import StoreEggCard from '../comps/StoreEggCard';
 import { ShopItems } from '../public/EggData';
@@ -26,15 +20,13 @@ const PageCard = styled.div`
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
     padding: 0 0 0 2%;
-    /* padding: 0 0 0 2%; */
 `;
 
-const StoreItems = styled.div`
+const Items = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 80%;
-    align-items: center;
 `;
 
 const CardWrapper = styled.div`
@@ -42,14 +34,14 @@ const CardWrapper = styled.div`
 `;
 
 const Store = () => {
-    const [eggCard, seteggCard] = useState(ShopItems);
+    const [eggCard, setEggCard] = useState(ShopItems);
 
     return (
         <Page>
             <NavDesktop />
             <PageCard>
-                <PageHeading text="Store"/>
-                <StoreItems>
+                <PageHeading text="Store" />
+                <Items>
                     {
                         eggCard.map(
                             (o, i) => (
@@ -63,7 +55,7 @@ const Store = () => {
                             )   
                         )
                     }
-                </StoreItems>
+                </Items>
             </PageCard>
         </Page>
     )

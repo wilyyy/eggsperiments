@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import { useState, useEffect } from "react";
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { useEffect } from "react";
+import { Player } from '@lottiefiles/react-lottie-player';
 import { useRouter } from 'next/router';
-import { COLORS } from '../styles/Colors';
-
-import LottieAnim from '../comps/LottieAnim';
 
 const Page = styled.div`
     width: 100vw;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { useState } from "react";
-import { COLORS } from '../styles/Colors';
 import lightswitch_dark from '../public/lightswitch_dark.svg';
 import lightswitch_light from '../public/lightswitch_light.svg';
 

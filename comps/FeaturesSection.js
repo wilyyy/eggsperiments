@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from '../styles/Colors';
 
 import FeaturesCard from './FeaturesCard';
 

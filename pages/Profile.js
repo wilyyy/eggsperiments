@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { useState } from "react";
-import { COLORS } from '../styles/Colors';
 
 import NavDesktop from '../comps/NavDesktop';
 
@@ -16,6 +14,7 @@ const PageCard = styled.div`
     width: 100vw;
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
+    color: ${({ theme }) => theme.CONTENT};
     padding: 0 0 0 2%;
 `;
 
