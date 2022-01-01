@@ -19,16 +19,23 @@ const PageCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
+    padding: 0 0 0 2%;
     /* padding: 0 0 0 2%; */
 `;
 
+const StoreItems = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+`;
+
 const CardWrapper = styled.div`
-    margin-bottom: 10px;
+    margin: 0 2rem;
 `;
 
 const Store = () => {
@@ -39,19 +46,21 @@ const Store = () => {
             <NavDesktop />
             <PageCard>
                 <PageHeading text="Store"/>
-                {
-                    eggCard.map(
-                        (o, i) => (
-                            <CardWrapper key={i}>
-                                <StoreEggCard
-                                    heading={o.name}
-                                    src={o.src}
-                                    price={o.price}
-                                />
-                            </CardWrapper>
-                        )   
-                    )
-                }
+                <StoreItems>
+                    {
+                        eggCard.map(
+                            (o, i) => (
+                                <CardWrapper key={i}>
+                                    <StoreEggCard
+                                        heading={o.name}
+                                        src={o.src}
+                                        price={o.price}
+                                    />
+                                </CardWrapper>
+                            )   
+                        )
+                    }
+                </StoreItems>
             </PageCard>
         </Page>
     )
