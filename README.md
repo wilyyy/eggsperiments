@@ -1,6 +1,7 @@
 # Eggsperiments
 
 experimental break project project to try out new technologies for the front end and play with 2022 UI/UX trends (Neumorphism-focused)
+progress on this project might be ongoing to test out new knowledge
 
 ## Todo
 - [x] Prototype
