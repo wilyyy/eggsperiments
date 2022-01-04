@@ -46,12 +46,14 @@ const BlueButton = ({
     outerheight="70px"
 }) => {
     return (
-        <Stroke onClick={onButtonPress}>
+        <Stroke 
+            outerwidth={outerwidth}
+            outerheight={outerheight}
+            onClick={onButtonPress}
+        >
             <Container
                 innerwidth={innerwidth}
                 innerheight={innerheight}
-                outerwidth={outerwidth}
-                outerheight={outerheight}
             >
                 <Text textsize={textsize}>{text}</Text>
             </Container>

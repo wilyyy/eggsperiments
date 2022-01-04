@@ -1,10 +1,7 @@
-//pls dont break!!
 import styled from 'styled-components';
-import { COLORS } from '../styles/Colors';
 import { useState } from "react";
 
 import LandingNav from '../comps/LandingNav';
-import LightSwitch from '../comps/LightSwitch';
 import HomeSection from '../comps/HomeSection';
 import AboutSection from '../comps/AboutSection';
 import FeaturesSection from '../comps/FeaturesSection';
@@ -21,7 +18,6 @@ const Page = styled.div`
 `;
 
 export default function Home() {
-  // const router = useRouter();
   const [page, setPage] = useState("Home");
   return (
     <Page>
