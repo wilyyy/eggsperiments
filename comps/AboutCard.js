@@ -19,6 +19,19 @@ const Container = styled.div`
         text-shadow: 0px 0px 7px ${({ theme }) => theme.CONTENT};
         transition: 0.5s;
     }
+
+    @media (max-width: 576px){ 
+        width: 274px;
+        height: 389px;
+        font-size: 14px;
+        text-align: center;
+
+        .link {
+            text-shadow: 0px 0px 7px ${({ theme }) => theme.CONTENT};
+            transition: 0.5s;
+            text-decoration: underline;
+        }
+    }
 `;
 
 const AboutCard = () => {

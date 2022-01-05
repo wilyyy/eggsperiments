@@ -9,6 +9,7 @@ const Container = styled.div`
     height: 241px;
     box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
+    font-family: "CartographCFRegular";
 `;
 
 const Text = styled.p`

@@ -14,6 +14,11 @@ const Container = styled.div`
     color: ${({ theme }) => theme.CONTENT};
     box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
     border-radius: 49px;
+
+    @media (max-width: 576px){ 
+        width: 280px;
+        margin-right: 12%;
+    }
 `;
 
 const Selected = styled.div`

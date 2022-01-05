@@ -18,13 +18,13 @@ const PageCard = styled.div`
     width: 100vw;
     height: 100vh;
     background: ${({ theme }) => theme.BASE};
-    padding: 0 0 0 2%;
+    padding: 0 8% 0 2%;
 `;
 
 const RowOutside = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 1206px;
+    width: auto;
     height: 589px;
 `;
 

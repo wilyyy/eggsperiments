@@ -3,13 +3,6 @@ import { useRouter } from 'next/router';
 
 import BlueButton from './BlueButton';
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 454px;
-    height: 549px;
-`;
-
 const Card = styled.div`
     width: 454px;
     height: 483px;
@@ -22,6 +15,12 @@ const Card = styled.div`
     box-shadow: -4px -4px 6.5368px ${({ theme }) => theme.SUPERLIGHTTINT}, 4px 4px 6.5368px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     z-index: 1;
+
+    @media (max-width: 576px){ 
+        width: 274px;
+        height: 389px;
+        margin-bottom: 20%;
+    }
 `;
 
 const Input = styled.input`
@@ -48,6 +47,11 @@ const Input = styled.input`
         outline: none;
         transition: 1s;
     }
+
+    @media (max-width: 576px){ 
+        width: 178px;
+        height: 52px;
+    }
 `;
 
 const AuthCard = () => {
@@ -56,17 +60,12 @@ const AuthCard = () => {
         router.push('/Loading');
     }
     return (
-        <Container>
-            {/* <Row>
-                <BigTab />
-                <SmolTab />
-            </Row> */}
-            <Card>
-                <Input placeholder="E-mail" type="email" />
-                <Input placeholder="Password" type="password" />
-                <BlueButton onButtonPress={RouteToLoading}/>
-            </Card>
-        </Container>
+        <Card>
+            <Input placeholder="E-mail" type="email" />
+            <Input placeholder="Password" type="password" />
+            <BlueButton onButtonPress={RouteToLoading}/>
+        </Card>
+
     )
 }
 

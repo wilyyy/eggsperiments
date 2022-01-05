@@ -13,6 +13,12 @@ const Container = styled.div`
     font-family: "CartographCFRegular";
     color: ${({ theme }) => theme.CONTENT};
     padding: 2% 3% 0 3%;
+
+    @media (max-width: 576px){
+        width: 324px;
+        height: 392px;
+        padding: 2%;
+    }
 `;
 
 const H2 = styled.h2`
@@ -20,10 +26,15 @@ const H2 = styled.h2`
     font-family: "CartographCFRegular";
     align-self: flex-start;
     margin: 0;
+
+    @media (max-width: 576px){
+        font-size: 14px;
+        align-self: center;
+    }
 `;
 
 const Ul = styled.ul`
-    padding: 0;
+    padding: 1;
 `;
 
 const Li = styled.li`
