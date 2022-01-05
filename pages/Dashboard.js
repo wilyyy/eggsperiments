@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import NavDesktop from '../comps/NavDesktop';
+import NavMobile from '../comps/NavMobile';
 import PageHeading from '../comps/PageHeading';
 import FeaturedEggSection from '../comps/FeaturedEggSection';
 import DashboardCard from '../comps/DashboardCard';
@@ -43,9 +44,22 @@ const Column = styled.div`
     height: 589px;
 `;
 
+const MobileNavCont = styled.div`
+    display: none;
+
+    @media (max-width: 576px){ 
+        display: flex;
+        position: absolute;
+        z-index: 100;
+    }
+`;
+
 const Dashboard = () => {
     return (
         <Page>
+            <MobileNavCont>
+                <NavMobile />
+            </MobileNavCont>
             <NavDesktop />
             <PageCard>
                 <PageHeading text="Welcome, User!"/>

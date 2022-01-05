@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState } from "react";
 
 import NavDesktop from '../comps/NavDesktop';
+import NavMobile from '../comps/NavMobile';
 import StoreEggCard from '../comps/StoreEggCard';
 import { ShopItems } from '../public/EggData';
 import PageHeading from '../comps/PageHeading';
@@ -33,11 +34,24 @@ const CardWrapper = styled.div`
     margin: 0 2rem;
 `;
 
+const MobileNavCont = styled.div`
+    display: none;
+
+    @media (max-width: 576px){ 
+        display: flex;
+        position: absolute;
+        z-index: 100;
+    }
+`;
+
 const Store = () => {
     const [eggCard, setEggCard] = useState(ShopItems);
 
     return (
         <Page>
+            <MobileNavCont>
+                <NavMobile />
+            </MobileNavCont>
             <NavDesktop />
             <PageCard>
                 <PageHeading text="Store" />

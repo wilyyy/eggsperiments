@@ -16,6 +16,10 @@ const Container = styled.div`
     box-shadow: inset -4px 0px 10px ${({ theme }) => theme.TINT};
     filter: drop-shadow(5px 0px 10px ${({ theme }) => theme.SHADE});
     background: linear-gradient(180deg, ${({ theme }) => theme.SHADE} 0%, ${({ theme }) => theme.TINT} 100%);
+
+    @media (max-width: 576px){
+        display: none;
+    }
 `;
 
 const TopCol = styled.div`

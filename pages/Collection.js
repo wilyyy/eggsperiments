@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState } from "react";
 
 import NavDesktop from '../comps/NavDesktop';
+import NavMobile from '../comps/NavMobile';
 import CollectionEggCard from '../comps/CollectionEggCard';
 import PageHeading from '../comps/PageHeading';
 import { CollectionItems } from '../public/EggData';
@@ -31,6 +32,16 @@ const Items = styled.div`
     
 `;
 
+const MobileNavCont = styled.div`
+    display: none;
+
+    @media (max-width: 576px){ 
+        display: flex;
+        position: absolute;
+        z-index: 100;
+    }
+`;
+
 const CardWrapper = styled.div`
     margin: 0 2rem;
 `;
@@ -39,6 +50,9 @@ const Collection = () => {
     const [eggCard, setEggCard] = useState(CollectionItems);
     return (
         <Page>
+            <MobileNavCont>
+                <NavMobile />
+            </MobileNavCont>
             <NavDesktop />
             <PageCard>
                 <PageHeading text="Your Collection" />
