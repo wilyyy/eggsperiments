@@ -15,6 +15,11 @@ const Container = styled.div`
     font-family: "CartographCFRegular";
     color: ${({ theme }) => theme.CONTENT};
     overflow: hidden;
+
+    @media (max-width: 576px){ 
+        width: 411px;
+        height: 155px;
+    }
 `;
 
 const Row = styled.div`

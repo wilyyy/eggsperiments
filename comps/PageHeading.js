@@ -4,6 +4,10 @@ const Text = styled.p`
     color: ${({ theme }) => theme.CONTENT};
     font-size: 37px;
     font-family: "MBFNanomaton";
+
+    @media (max-width: 576px){ 
+        font-size: 28px;
+    }
 `;
 
 const PageHeading = ({

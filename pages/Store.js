@@ -11,6 +11,10 @@ const Page = styled.div`
     display: flex;
     width: 100vw;
     height: 100vh;
+
+    @media (max-width: 576px){ 
+        height: auto;
+    }
 `;
 
 const PageCard = styled.div`
@@ -18,9 +22,14 @@ const PageCard = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     width: 100vw;
-    height: 100vh;
     background: ${({ theme }) => theme.BASE};
     padding: 0 0 0 2%;
+
+    @media (max-width: 576px){ 
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
 `;
 
 const Items = styled.div`
@@ -28,10 +37,19 @@ const Items = styled.div`
     flex-wrap: wrap;
     width: 100%;
     height: 80%;
+
+    @media (max-width: 576px){ 
+        margin: 2rem 0;
+        justify-content: center;
+    }
 `;
 
 const CardWrapper = styled.div`
     margin: 0 2rem;
+
+    @media (max-width: 576px){ 
+        margin: 2rem 0;
+    }
 `;
 
 const MobileNavCont = styled.div`

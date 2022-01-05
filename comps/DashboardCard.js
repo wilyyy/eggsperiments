@@ -10,11 +10,20 @@ const Container = styled.div`
     box-shadow: -4px -4px 10px ${({ theme }) => theme.TINT}, 4px 4px 10px ${({ theme }) => theme.SHADE};
     border-radius: 11px;
     font-family: "CartographCFRegular";
+
+    @media (max-width: 576px){ 
+        width: 254px;
+        height: 161px;
+    }
 `;
 
 const Text = styled.p`
     font-size: 18px;
     color: ${({ theme }) => theme.CONTENT};
+
+    @media (max-width: 576px){ 
+        font-size: 14px;;
+    }
 `;
 
 const DashboardCard = ({

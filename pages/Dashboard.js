@@ -11,6 +11,10 @@ const Page = styled.div`
     display: flex;
     width: 100vw;
     height: 100vh;
+    
+    @media (max-width: 576px){ 
+        flex-direction: column;
+    }
 `;
 
 const PageCard = styled.div`
@@ -27,6 +31,10 @@ const RowOutside = styled.div`
     justify-content: space-between;
     width: auto;
     height: 589px;
+
+    @media (max-width: 576px){ 
+        flex-direction: column;
+    }
 `;
 
 const RowInside = styled.div`
@@ -34,6 +42,10 @@ const RowInside = styled.div`
     width: auto;
     height: auto;
     justify-content: space-between;
+
+    @media (max-width: 576px){ 
+        flex-direction: column;
+    }
 `;
 
 const Column = styled.div`
