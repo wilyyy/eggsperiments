@@ -11,7 +11,7 @@ progress on this project might be ongoing to test out new knowledge learned from
 - [x] Finish Dark Mode / Light Mode toggle 
 - [ ] Custom Animation using Animation API (Framer Motion)
 - [ ] Firebase Email and Google Auth
-- [ ] Responsive Design for mobile devices
+- [x] Responsive Design for mobile devices
 - [x] Deployed on Vercel
 
 ## Back End Implementation Later (MERN?) & Misc
