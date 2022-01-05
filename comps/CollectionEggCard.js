@@ -15,6 +15,11 @@ const Container = styled.div`
     border-radius: 11px;
     font-family: "CartographCFRegular";
     padding: 0 1% 0 0;
+
+    @media (max-width: 576px){ 
+        width: 300px;
+        height: 290px;
+    }
 `;
 
 const H1 = styled.p`

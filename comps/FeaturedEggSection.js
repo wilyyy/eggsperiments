@@ -17,8 +17,8 @@ const Container = styled.div`
     overflow: hidden;
 
     @media (max-width: 576px){ 
-        width: 411px;
-        height: 155px;
+        width: 351px;
+        height: 295px;
     }
 `;
 
@@ -56,10 +56,30 @@ const InnerCont = styled.div`
     ::-webkit-scrollbar-thumb:hover {
         background: ${({ theme }) => theme.SUPERLIGHTTINT};
     }
+
+    @media (max-width: 576px){ 
+        width: 351px;
+        height: 255px;
+    }
 `;
 
 const CardWrapper = styled.div`
     margin: 0 2rem;
+`;
+
+const WebBlueButton = styled.div`
+    @media (max-width: 576px){ 
+        display: none;
+    }
+`;
+
+const MobileBlueButton = styled.div`
+    display: none;
+    @media (max-width: 576px){ 
+        display: flex;
+        position: relative;
+        top: 10px;
+    }
 `;
 
 const FeaturedEggSection = () => {
@@ -70,15 +90,28 @@ const FeaturedEggSection = () => {
         <Container>
             <Row>
                 <p>Featured Eggs</p>
-                <BlueButton 
-                    innerwidth='163px'
-                    innerheight='36px'
-                    outerwidth='168px'
-                    outerheight='41px'
-                    text="View All"
-                    textsize="16px"
-                    onButtonPress={()=>{router.push('/Store')}}
-                />
+                <WebBlueButton>
+                    <BlueButton 
+                        innerwidth='163px'
+                        innerheight='36px'
+                        outerwidth='168px'
+                        outerheight='41px'
+                        text="View All"
+                        textsize="16px"
+                        onButtonPress={()=>{router.push('/Store')}}
+                    />
+                </WebBlueButton>
+                <MobileBlueButton>
+                    <BlueButton 
+                        innerwidth='102px'
+                        innerheight='18px'
+                        outerwidth='107px'
+                        outerheight='23px'
+                        text="View All"
+                        textsize="14px"
+                        onButtonPress={()=>{router.push('/Store')}}
+                    />
+                </MobileBlueButton>
             </Row>
             <InnerCont>
                 {
