@@ -14,7 +14,7 @@ progress on this project might be ongoing to test out new knowledge learned from
 - [ ] Responsive Design for mobile devices
 - [x] Deployed on Vercel
 
-## If I have time
+## Back End Implementation Later (MERN?) & Misc
 - [ ] clean up code and use clean state management using context (wanna get good at it)
 - [ ] figure out a way to implement high order array functions & dynamic routing for practice 
 - [ ] Player currency required to purchse eggs (specific to firebase user id)
