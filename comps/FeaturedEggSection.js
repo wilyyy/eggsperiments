@@ -84,7 +84,7 @@ const MobileBlueButton = styled.div`
 
 const FeaturedEggSection = () => {
     const router = useRouter();
-    const [eggs, setEggs] = useState(ShopItems);
+    // const [eggs, setEggs] = useState(ShopItems);
     
     return (
         <Container>
@@ -108,14 +108,14 @@ const FeaturedEggSection = () => {
                         outerwidth='107px'
                         outerheight='23px'
                         text="View All"
-                        textsize="14px"
+                        textsize="11px"
                         onButtonPress={()=>{router.push('/Store')}}
                     />
                 </MobileBlueButton>
             </Row>
             <InnerCont>
                 {
-                    eggs.map(
+                    ShopItems.map(
                         (o, i) => (
                             <CardWrapper key={i}>
                                 <FeaturedEggInfo

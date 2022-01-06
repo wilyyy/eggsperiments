@@ -63,7 +63,7 @@ const MobileNavCont = styled.div`
 `;
 
 const Store = () => {
-    const [eggCard, setEggCard] = useState(ShopItems);
+    // const [eggCard, setEggCard] = useState(ShopItems);
 
     return (
         <Page>
@@ -75,7 +75,7 @@ const Store = () => {
                 <PageHeading text="Store" />
                 <Items>
                     {
-                        eggCard.map(
+                        ShopItems.map(
                             (o, i) => (
                                 <CardWrapper key={i}>
                                     <StoreEggCard

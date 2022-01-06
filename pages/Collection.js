@@ -71,7 +71,7 @@ const MobileNavCont = styled.div`
 `;
 
 const Collection = () => {
-    const [eggCard, setEggCard] = useState(CollectionItems);
+    // const [eggCard, setEggCard] = useState(CollectionItems);
     return (
         <Page>
             <MobileNavCont>
@@ -82,7 +82,7 @@ const Collection = () => {
                 <PageHeading text="Your Collection" />
                 <Items>
                     {
-                        eggCard.map(
+                        CollectionItems.map(
                             (o, i) => (
                                 <CardWrapper key={i}>
                                     <CollectionEggCard
