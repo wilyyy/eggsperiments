@@ -7,10 +7,10 @@ progress on this project might be ongoing to test out new knowledge learned from
 ## Todo
 - [x] Prototype
 - [x] Finish Custom components and screens created with styled components 
-- - [ ] try using high order array functions to load some comps (map, filter, etc)
-- - - [x] map out items in store, collection and dashboard
-- - - [ ] use filter to filter through price ranges in store
-- - - [ ]  use sort to sort collection items
+- [ ] try using high order array functions to load some comps (map, filter, etc)
+- - [x] map out items in store, collection and dashboard
+- - [ ] use filter to filter through price ranges in store
+- - [ ]  use sort to sort collection items
 - [x] Finish Dark Mode / Light Mode toggle 
 - [ ] Custom Animation using Animation API (Framer Motion)
 - [ ] Firebase Email and Google Auth
