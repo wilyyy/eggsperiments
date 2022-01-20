@@ -6,7 +6,7 @@ solo experimental break project project to try out new technologies for the fron
 
 progress on this project might be ongoing to test out new knowledge learned from school winter semester / own time
 
-<img src="https://im3.ezgif.com/tmp/ezgif-3-577ef05164.gif" />
+<img src="https://media.giphy.com/media/YD3ymAebOgTB5X5WL6/giphy.gif" />
 
 ## Todo
 - [x] Prototype
