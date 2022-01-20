@@ -1,8 +1,12 @@
 # Eggsperiments
 
-experimental break project project to try out new technologies for the front end and play with 2022 UI/UX trends (Neumorphism-focused)
+https://eggsperiments.vercel.app/
+
+solo experimental break project project to try out new technologies for the front end and play with 2022 UI/UX trends (Neumorphism-focused)
 
 progress on this project might be ongoing to test out new knowledge learned from school winter semester / own time
+
+<img src="https://im3.ezgif.com/tmp/ezgif-3-577ef05164.gif" />
 
 ## Todo
 - [x] Prototype
